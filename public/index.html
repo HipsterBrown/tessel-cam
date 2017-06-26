@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tessel WiFi Setup</title>
+    <link rel="stylesheet" href="/public/app.css" />
+  </head>
+  <body>
+    <header class="center">
+      <h1>Welcome to Tessel WiFi Setup</h1>
+    </header>
+
+    <form action="/connect" method="POST" class="left-align mx-auto fit-width">
+      <div class="mb3">
+        <label for="ssid" class="block mb1">Network Name:</label>
+        <select id="ssid" name="ssid" required class="select f5 col-12">
+          <option value="">Fetching networks...</option>
+        </select>
+      </div>
+
+      <div class="mb3">
+        <label for="password" class="block mb1">Network Password:</label>
+        <input type="text" id="password" name="password" class="text-field f5 col-12" />
+      </div>
+
+      <div>
+        <input type="submit" value="CONNECT" class="button col-12 f5">
+      </div>
+    </form>
+    <script type="text/javascript" src="/public/app.js"></script>
+  </body>
+</html>
